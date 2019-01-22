@@ -1,0 +1,25 @@
+@mixin section-line {
+    content: '';
+    top:0;
+    left: 50%;
+    position: absolute;
+    width: 35%;
+    border-top: 3px solid $darkBlue;
+    margin-left: -18%;
+};
+
+@mixin section-color {
+    content:'';
+    position:absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    width: 35px;
+};
+
+@mixin section {
+    background-color: $black;
+    min-height: 100vh;
+    position: relative;
+    padding: 30px;
+}

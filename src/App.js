@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import Header from './Components/Header/Header';
+import About from './Components/About/About';
+import Work from './Components/Work/Work';
+import Skills from './Components/Skills/Skills';
+import Education from './Components/Education/Education';
+import Footer from './Components/Footer/Footer';
+import './App.scss';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+const App = () => {
+  return(
+      <Fragment>
+      <div className="sticky-hero"></div>
+      <div className="app">
+        <Header />
+        <About />
+        <Skills />
+        <Education />
+        <Work />
+        <Footer />
       </div>
-    );
-  }
+      </Fragment>
+    )
 }
 
 export default App;
+

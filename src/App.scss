@@ -1,0 +1,16 @@
+.app {
+  text-align: center;
+  color: white;
+  position:relative;
+}
+.sticky-hero {
+	height: 100vh;
+	background: url("/images/computer.jpg") no-repeat;
+	background-size: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 0;
+}
+
+
+

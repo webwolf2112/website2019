@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+#work {
+    .work-container {
+        @include section;
+
+        &:before {
+            @include section-line;
+        }
+        &:after {
+            @include section-color;
+            left: 0;
+            background: $red;
+        }
+    }
+
+    .work-section {
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .work-item {
+        box-sizing: border-box;
+        width: 25%;
+        padding: 10px; 
+
+        @media (max-width: 800px) {
+            width: 50%;
+        }
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+        img { 
+            max-width: 100%;
+            width: 100%;
+        }
+        
+    }
+}

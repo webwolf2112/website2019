@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+#skills {
+    @include section;
+
+    &:before {
+        @include section-line;
+    }
+    &:after {
+        @include section-color;
+        left: 0;
+        background: $pink;
+    }
+}

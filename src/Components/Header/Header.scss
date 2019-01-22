@@ -1,0 +1,33 @@
+.header {
+	position: relative;
+	z-index: 2;
+	a {
+		margin-left: 50px;
+		color: white;
+		text-decoration: none;
+
+		&:hover {
+			background: -webkit-linear-gradient(#eee, #333);
+  			-webkit-background-clip: text;
+ 			 -webkit-text-fill-color: transparent;
+		}
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		padding-right: 50px;
+	}
+    height: 100vh;
+
+    text-align: center;
+    color: white;
+    font-family: 'Shadows Into Light Two', cursive;
+
+    h1 {
+		font-size: 4em;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+}
