@@ -32,7 +32,7 @@ const Work = (...props) => {
 				</div>
 			</div>
 			<div>
-				<h2>Highlights</h2>
+				<h1>Highlights</h1>
 				<div className="highlight-section">
 					{highlights}
 				</div>

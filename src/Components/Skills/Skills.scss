@@ -3,23 +3,33 @@
 
 #skills {
     @include section;
-    min-height: 80vh;
+    min-height: 90vh;
     text-align: right;
     display: flex;
     justify-content: center;
     align-items: center;
 
     h1 {
-        font-size: 3rem;
         text-align: center;
     }
 
+    h3 {
+        color: $lightBlue;
+    }
+
     .list {
-        width: 70%;
-        margin-left: 20%;
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 35px;
+
+      div {
+        margin-right: 50px;
+        width: 60%;
+        font-size: 2rem;
+      }
     }
     
-
     &:before {
         @include section-line;
     }

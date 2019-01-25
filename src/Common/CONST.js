@@ -8,9 +8,8 @@ const CONST = {
 			'Jest',
 			'HTML',
 			'CSS/SASS',
-			'git',
+			'Git',
 			'Advanced Troubleshooting Skills',
-			'Passion for learning',
 			'Ajax',
 			'Api Integration',
 		],
@@ -25,7 +24,12 @@ const CONST = {
 			'Wordpress',
 			'Angular',
 			'MySQL Fundamentals',
-		]
+		],
+		learning: [
+			'Python',
+			'Serverless',
+			'Computer Science Fundamentals',
+		],
 	},
 	education: [
 		{year: 2018, items: ['ONLINE TRINING THROUGH UDEMY AND PLURAL SIGHT']},

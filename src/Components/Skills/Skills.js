@@ -12,20 +12,29 @@ const Skills = () => {
 		return <span key={`past-${index}`}>{skill}, </span>;
 	});
 
+	const learning = CONST.skills.learning.map((skill, index) => {
+		return <span key={`past-${index}`}>{skill}, </span>;
+	});
+
 
 	return (
 
 		<section id="skills">
 			<div>
-				<h1>What I'm great at.</h1>
-				<h3>Current Position</h3>
+				<h1>Skills</h1>
 				<div className="list">
-					{current}
+					<div>{current}</div>
+					<h3>Current Position</h3>
 				</div>
 
-				<h3>Past Positions</h3>
 				<div className="list">
-					{past}
+					<div>{past}</div>
+					<h3>Past Positions</h3>
+				</div>
+
+				<div className="list">
+					<div>{learning}</div>
+					<h3>What's Next</h3>
 				</div>
 			</div>	
 		</section>
