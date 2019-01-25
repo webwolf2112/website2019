@@ -27,14 +27,13 @@ const Work = (...props) => {
 				<p className="intro">
 					I have had the honor of working on many high visibility websites over the course of my career.  Responsive, pixel perfect, well organized and scalability are what I strive for in all of my websites. Below are just a few of the amazing companies I have had the privilege to work with.  
 				</p>
-				<div className="work-section">
-					{workHistory}
-				</div>
-			</div>
-			<div>
-				<h1>Highlights</h1>
+				<h2>Highlights</h2>
 				<div className="highlight-section">
 					{highlights}
+				</div>
+				<h2>Websites</h2>
+				<div className="work-section">
+					{workHistory}
 				</div>
 			</div>
 		</section>
