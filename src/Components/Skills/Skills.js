@@ -5,23 +5,29 @@ import './Skills.scss';
 
 const Skills = () => {
 	const current = CONST.skills.current.map((skill, index) => {
-		return <div key={`current-${index}`}>{skill}</div>;
+		return <span key={`current-${index}`}>{skill}, </span>;
 	});
 
 	const past = CONST.skills.past.map((skill, index) => {
-		return <div key={`past-${index}`}>{skill}</div>;
+		return <span key={`past-${index}`}>{skill}, </span>;
 	});
 
 
 	return (
 
 		<section id="skills">
-			<h1>My Skills</h1>
-			<h2>Current Position</h2>
-			{current}
+			<div>
+				<h1>What I'm great at.</h1>
+				<h3>Current Position</h3>
+				<div className="list">
+					{current}
+				</div>
 
-			<h2>Past Positions</h2>
-			{past}
+				<h3>Past Positions</h3>
+				<div className="list">
+					{past}
+				</div>
+			</div>	
 		</section>
 	);
 

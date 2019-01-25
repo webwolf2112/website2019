@@ -1,6 +1,13 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
 .header {
+	@include section;
+	background: none;
 	position: relative;
 	z-index: 2;
+	padding-top: 20px;
+
 	a {
 		margin-left: 50px;
 		color: white;
@@ -9,7 +16,7 @@
 		&:hover {
 			background: -webkit-linear-gradient(#eee, #333);
   			-webkit-background-clip: text;
- 			 -webkit-text-fill-color: transparent;
+ 			-webkit-text-fill-color: transparent;
 		}
 	}
 
@@ -19,11 +26,13 @@
 		align-items: center;
 		padding-right: 50px;
 	}
-    height: 100vh;
+
+	@media (max-width: 800px) {
+		padding-top: 1%;
+	}
 
     text-align: center;
     color: white;
-    font-family: 'Shadows Into Light Two', cursive;
 
     h1 {
 		font-size: 4em;

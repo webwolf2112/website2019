@@ -4,21 +4,23 @@ import './work.scss';
 
 const Work = (...props) => {
 
-	const workHistory = CONST.work.map((workItem, index) => {
-		return (
-			<div key={`work ${index}`} className="work-item">
-				<img src={`./images/${workItem.image}`} alt={workItem.image} />
-				<div className="overlay">
-					<span className="company">{workItem.company}</span>
-					<span className="link">{workItem.link}</span>
-					<span className="desc">{workItem.desc}</span>
-				</div>
+	const workHistory = CONST.work.map((workItem, index) => (
+		<div key={`work ${index}`} className="work-item">
+			<img src={`./images/${workItem.image}`} alt={workItem.image} />
+			<div className="overlay">
+				<span className="company">{workItem.company}</span>
 			</div>
-		);
-	});
+		</div>
+	));
 
+	const highlights = CONST.highlights.map((highlight, index) => (
+		<div className="highlight">
+			<div className="company">{highlight.company}</div>
+			<p>{highlight.highlight}</p>
+		</div>
+	));
+			
 	return(
-
 		<section id="work">
 			<div className="work-container">
 				<h1>My Work</h1>
@@ -29,9 +31,14 @@ const Work = (...props) => {
 					{workHistory}
 				</div>
 			</div>
+			<div>
+				<h2>Highlights</h2>
+				<div className="highlight-section">
+					{highlights}
+				</div>
+			</div>
 		</section>
 	)
-
 }
 
 export default Work;

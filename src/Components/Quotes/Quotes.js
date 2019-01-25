@@ -13,8 +13,12 @@ class Quotes extends Component {
     this.randomQuote();
   }
 
+  componentWillUnmount() {
+    clearTimeout(this.timer);
+  }
+
   randomQuote () {
-    setInterval(() => {
+    this.timer = setInterval(() => {
       let randomQuote = CONST.quotes[Math.floor(Math.random() * CONST.quotes.length)];
       this.setState({currentQuote: randomQuote});
     }, 5000);
@@ -23,11 +27,7 @@ class Quotes extends Component {
   render () {
     return (
       <section classNames="quotes">
-      
-        <p> Here are my quotes</p>
         {this.state.currentQuote.quote} - {this.state.currentQuote.author}
-      
-
       </section>
     )
   }

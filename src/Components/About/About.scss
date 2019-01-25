@@ -3,7 +3,11 @@
 
 #about {
     @include section;
+    padding-top: 10px;
     background-color: $opaqueBlack;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
     &:before {
         @include section-line;
@@ -16,10 +20,16 @@
 
     h1 {
         font-size: 3em;
+        align-self: flex-start;
     }
 
     img {
         border-radius: 50%;
         max-width: 185px;
+    }
+
+    .content {
+        width: 70%;
+        margin: auto;
     }
 }

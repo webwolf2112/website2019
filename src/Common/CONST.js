@@ -11,8 +11,11 @@ const CONST = {
 			'git',
 			'Advanced Troubleshooting Skills',
 			'Passion for learning',
+			'Ajax',
+			'Api Integration',
 		],
 		past: [
+			'AWS',
 			'Node.js',
 			'AWS',
 			'Chai',
@@ -20,6 +23,8 @@ const CONST = {
 			'Sinon',
 			'JQuery',
 			'Wordpress',
+			'Angular',
+			'MySQL Fundamentals',
 		]
 	},
 	education: [
@@ -65,6 +70,10 @@ const CONST = {
 			image: 'conga.png',
 			desc: 'This is a very dynamic position which has allowed me the privilege of working on numerous teams and technology stacks. I have worked with multiple teams adding to and improving UI of numerous products. I work with React, Webpack, Jest, and Enzyme, working to create an incredible customer user experience. This is a very fast paced, very dynamic position that requires high level thinking, excellent communication, and a passion for excellence. I have also worked with another internal team within the where I worked directly on the Salesforce platform developing lightning components within our Salesforce app.',
 		}
+	],
+	highlights: [
+		{company: 'Gogo', highlight: 'Gogo In Flight App Redesign.  In flight Magazine launch'},
+		{company: 'Reebok', highlight: 'Be More Human Superbowl Launch. <br> UFC Launch <br> CUFC Sponsorship Launch, Crossfit Store, Athletes Pages, as well as numerous other landing pages'},{company: 'Crocs', highlight: 'Crocs mega menu, Brazil Site, and multiple landing pages.'}
 	],
 	quotes: [
 		{quote: 'If you can dream it, you can do it.', author: 'Walt Disney'},

@@ -2,17 +2,22 @@
 @import '../../styles/mixins.scss';
 
 #work {
-    .work-container {
-        @include section;
+    @include section;
+    padding-top: 3%;
 
-        &:before {
-            @include section-line;
-        }
-        &:after {
-            @include section-color;
-            left: 0;
-            background: $red;
-        }
+    &:before {
+        @include section-line;
+    }
+    &:after {
+        @include section-color;
+        left: 0;
+        background: $red;
+    }
+
+    .work-container {
+        width: 80%;
+        padding: 5%;
+        margin: auto;
     }
 
     .work-section {
@@ -24,7 +29,41 @@
     .work-item {
         box-sizing: border-box;
         width: 25%;
-        padding: 10px; 
+        position: relative;
+        margin: 10px;
+
+        img {
+            height: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            opacity: 0;
+            transition: all .4s ease;
+
+            span {
+                display: none;
+            }
+
+            &:hover {
+                background: $opaqueDarkBlue;
+                opacity: 1;
+                transition: all .4s ease;
+
+                span {
+                    display: block;
+                }
+            }   
+        }
 
         @media (max-width: 800px) {
             width: 50%;

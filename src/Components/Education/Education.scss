@@ -4,6 +4,7 @@
 #education {
     @include section;
     background: $opaqueBlack;
+    padding: 10% 0;
  
     &:before {
         @include section-line;
@@ -12,6 +13,11 @@
         @include section-color;
         right: 0;
         background: $darkBlue;
+    }
+
+    .intro-paragraph {
+        max-width: 63%;
+        margin: 0 auto 5%;
     }
 
     .education-single {

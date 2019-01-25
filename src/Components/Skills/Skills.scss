@@ -3,6 +3,22 @@
 
 #skills {
     @include section;
+    min-height: 80vh;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .list {
+        width: 70%;
+        margin-left: 20%;
+    }
+    
 
     &:before {
         @include section-line;

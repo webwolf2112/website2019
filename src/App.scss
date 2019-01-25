@@ -1,15 +1,28 @@
+@import './styles/variables.scss';
+
+html {
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
 .app {
   text-align: center;
   color: white;
   position:relative;
+  // font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
 }
 .sticky-hero {
 	height: 100vh;
-	background: url("/images/computer.jpg") no-repeat;
+	background: url("/images/computer.jpg") no-repeat $black;
 	background-size: 100%;
 	position: fixed;
 	width: 100%;
-	z-index: 0;
+  z-index: 0;
 }
 
 
