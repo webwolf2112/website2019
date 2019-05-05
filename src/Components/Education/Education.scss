@@ -26,76 +26,80 @@
         position:relative;
         width: 80%;
         margin: auto;
-        
-        &:before {
-            content: '';
-            position: absolute;
-            width: 2px;
-            top: 0;
-            bottom: 50%;
-            left: 25px;
-            background: #929292;
-            display: block;
-            z-index: 2;
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            top: 50%;
-            bottom: 0;
-            left: 25px;
-            background: #929292;
-            display: block;
-            z-index: 2;
-        }
-
-        &:first-child {
-            &:before {
-                background: none;
-                height: 0;
-            }
-        }
-
+  
         .year {
-            float: left;
-            display: inline-block;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            border: 2px solid #929292;
-            color: #fff;
-            line-height: 46px;
-            background: $lightBlue;;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            margin-top: -25px;
-            z-index: 5;
+            font-size: 2.5rem;
+            color: $darkBlue;
+            padding-bottom: 2.5rem;
         }
 
-        .field {
-            float: right;
-            width: 100%;
-            text-transform: uppercase;
-            line-height: 1.5em;
-        }
+        @media (min-width: 600px) {
 
-        &:nth-child(1) {
-            background-color: green;
-        }
-
-        &:last-child {
-            &:after {
-                display: none;
+            .edu-item {
+                padding-left: 50px;
+                max-width: 80%;
             }
-        }
 
-        &:first-of-type {
+            .year {
+                font-size: 1.5rem;
+                line-height: 50px;
+                border-radius: 50%;
+                width: 50px;
+                border: 2px solid #929292;
+                background: $darkBlue;
+                color: white;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -25px;
+                z-index: 5; 
+                padding-bottom: 0;
+            }
+
             &:before {
-                display: none;
+                content: '';
+                position: absolute;
+                width: 2px;
+                top: 0;
+                bottom: 50%;
+                left: 25px;
+                background: #929292;
+                display: block;
+                z-index: 2;
             }
+    
+            &:after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                top: 50%;
+                bottom: 0;
+                left: 25px;
+                background: #929292;
+                display: block;
+                z-index: 2;
+            }
+
+            &:first-child {
+                &:before {
+                    background: none;
+                    height: 0;
+                }
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+    
+            &:first-of-type {
+                &:before {
+                    display: none;
+                }
+            }
+    
         }
+        
     }
 }

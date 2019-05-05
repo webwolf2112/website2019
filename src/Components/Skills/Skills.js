@@ -23,18 +23,18 @@ const Skills = () => {
 			<div>
 				<h1>Skills</h1>
 				<div className="list">
-					<div>{current}</div>
 					<h3>Current Role</h3>
+					<div>{current}</div>
 				</div>
 
 				<div className="list">
-					<div>{past}</div>
 					<h3>Past Roles</h3>
+					<div>{past}</div>
 				</div>
 
 				<div className="list">
-					<div>{learning}</div>
 					<h3>Working On</h3>
+					<div>{learning}</div>
 				</div>
 			</div>	
 		</section>

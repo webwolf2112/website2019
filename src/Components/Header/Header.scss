@@ -5,7 +5,7 @@
 	@include section;
 	background: none;
 	position: relative;
-	z-index: 2;
+	z-index: 6;
 	padding-top: 70px;
 
 	a {
@@ -21,27 +21,94 @@
 	}
 
 	nav {
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		padding-right: 50px;
 		position: fixed;
 		right: 0;
 		width: 100%;
 		top: 0;
 		background: $opaqueBlack;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		padding: 20px 50px 20px 20px;
+
+		&.closed a {
+			@media (max-width: 600px) {
+				display: none;
+			}	
+		}
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+		align-content: flex-end;
+		align-items: flex-end;
+
+		a {
+			padding-top: 25px;
+		}
+	
 	}
 
-	@media (max-width: 800px) {
-		padding-top: 1%;
+		h1 {
+			font-size: 4em;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
 	}
 
-    text-align: center;
-    color: white;
+	.hamburger {
+		width: 30px;
+		height: 30px;
+		display: none;
 
-    h1 {
-		font-size: 4em;
-		font-weight: 700;
-		margin-bottom: 0;
+		@media (max-width: 600px) {
+			display:block
+		}
+
+		span {
+			width: 30px;
+			height: 3px;
+			background: white;
+			display: block;
+			position: relative;
+			margin-top: 13px;
+			transition: all .3s ease-in-out;
+
+
+			&:before {
+				content: '';
+				display: block;
+				width: 30px;
+				height: 3px;
+				background: white;
+				position: absolute;
+				top: -10px;
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				width: 30px;
+				height: 3px;
+				background: white;
+				position:absolute;
+				top: 10px;
+				transition: all .3s ease-in-out;
+			}
+
+			&.open {
+				height: 0;
+
+				&:before {
+					transform: rotate(50deg);
+					top:0;
+					transition: all .3s ease-in-out;
+
+				}
+				&:after {
+					transform: rotate(-50deg);
+					top:0;
+				}
+			}
+		}
 	}
 }

@@ -6,9 +6,11 @@ const Work = (...props) => {
 
 	const workHistory = CONST.work.map((workItem, index) => (
 		<div key={`work ${index}`} className="work-item">
-			<img src={`./images/${workItem.image}`} alt={workItem.image} />
-			<div className="overlay">
-				<span className="company">{workItem.company}</span>
+			<div className="hover-container">
+				<img src={`./images/${workItem.image}`} alt={workItem.image} />
+				<div className="overlay">
+					<a className="company" target="blank" href={workItem.link}>{workItem.company}</a>
+				</div>
 			</div>
 		</div>
 	));
@@ -22,6 +24,7 @@ const Work = (...props) => {
 			
 	return(
 		<section id="work">
+	
 			<div className="work-container">
 				<h1>My Work</h1>
 				<p className="intro">

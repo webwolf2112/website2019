@@ -29,6 +29,8 @@ const CONST = {
 			'Python',
 			'Serverless',
 			'Computer Science Fundamentals',
+			'Data Structures',
+			'Serverless',
 		],
 	},
 	education: [
@@ -43,6 +45,17 @@ const CONST = {
 		{year: 2001, items: ['CIW ASSOCIATE CERTIFIED', 'COMPTIA I-NET+ CERTIFIED PROFESSIONAL']},
 	],
 	work: [
+		{
+			company: 'Conga', 
+			link: 'https://getconga.com/',
+			image: 'conga.jpg',
+			desc: 'This is a very dynamic position which has allowed me the privilege of working on numerous teams and technology stacks. I have worked with multiple teams adding to and improving UI of numerous products. I work with React, Webpack, Jest, and Enzyme, working to create an incredible customer user experience. This is a very fast paced, very dynamic position that requires high level thinking, excellent communication, and a passion for excellence. I have also worked with another internal team within the where I worked directly on the Salesforce platform developing lightning components within our Salesforce app.',
+		},{
+			company: 'Gogo Inflight Entertainment', 
+			link: 'https://business.gogoair.com/',
+			image: 'gogo.jpg',
+			description: 'I have had the privilege of working on Gogo’s worldwide Inflight Entertainment. I was in change of multiple feature releases including Magazines, Language Internationalization, and multiple UI redesigns. These projects involve custom code written in Node.js, Backbone, Mocha, Chai and Sinon. I have also worked on several AWS implementations of Lambda, S3 and EC2 instances. This position requires ownership, collaboration, and on-time delivery of highly efficient code.',
+		}, 
 		{company: 'Reebok', 
 			link: 'http://www.reebok.com/us/',
 			image: 'reebok.jpg',
@@ -64,20 +77,34 @@ const CONST = {
 			desc: 'I worked with my team to create this pixel perfect responsive Micro-Site. This design required very complex CSS for the sliders, as well as very complex data structure. The client was very satisfied. I wrote custom PHP, Javascript, HTML, and CSS for this project.',
 
 		}, {
-			company: 'Gogo Inflight Entertainment', 
-			link: 'https://business.gogoair.com/',
-			image: 'gogo.png',
-			description: 'I have had the privilege of working on Gogo’s worldwide Inflight Entertainment. I was in change of multiple feature releases including Magazines, Language Internationalization, and multiple UI redesigns. These projects involve custom code written in Node.js, Backbone, Mocha, Chai and Sinon. I have also worked on several AWS implementations of Lambda, S3 and EC2 instances. This position requires ownership, collaboration, and on-time delivery of highly efficient code.',
+			company: 'Blue Star',
+			image: 'bluestar.jpg',
+			link: 'https://www.bluestarcooking.com/'
+		},{
+			company: 'Big Chill',
+			image: 'bigchill.jpg',
+			link: 'https://bigchill.com/'
 		}, {
-			company: 'Conga', 
-			link: 'https://getconga.com/',
-			image: 'conga.png',
-			desc: 'This is a very dynamic position which has allowed me the privilege of working on numerous teams and technology stacks. I have worked with multiple teams adding to and improving UI of numerous products. I work with React, Webpack, Jest, and Enzyme, working to create an incredible customer user experience. This is a very fast paced, very dynamic position that requires high level thinking, excellent communication, and a passion for excellence. I have also worked with another internal team within the where I worked directly on the Salesforce platform developing lightning components within our Salesforce app.',
-		}
+			company: 'Pillar Companies',
+			image: 'pillar.jpg',
+			link: 'http://pillarcompanies.com/'
+		}, {
+			company: 'Lynn Ryan Real Estate',
+			image: 'lynn.jpg',
+			link: 'http://lynnryanboulder.com/',
+		},{
+			company: 'Crossfit by Reebok',
+			image: 'crossfit.jpg',
+			link: 'https://www.store.crossfit.com/'
+		}, {
+			company: 'Voltage Advertising & Design',
+			image: 'voltage.jpg',
+			link: 'https://voltagead.com/'
+		}, 
 	],
 	highlights: [
 		{company: 'Gogo', highlight: 'Gogo In Flight App Redesign.  In flight Magazine launch'},
-		{company: 'Reebok', highlight: 'Be More Human Superbowl Launch. <br> UFC Launch <br> CUFC Sponsorship Launch, Crossfit Store, Athletes Pages, as well as numerous other landing pages'},{company: 'Crocs', highlight: 'Crocs mega menu, Brazil Site, and multiple landing pages.'}
+		{company: 'Reebok', highlight: 'Be More Human Superbowl Launch. UFC Launch CUFC Sponsorship Launch, Crossfit Store, Athletes Pages, as well as numerous other landing pages'},{company: 'Crocs', highlight: 'Crocs mega menu, Brazil Site, and multiple landing pages.'}
 	],
 	quotes: [
 		{quote: 'If you can dream it, you can do it.', author: 'Walt Disney'},
